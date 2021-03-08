@@ -33,7 +33,8 @@ function onClick(event) {
     }
     openModal(event);
     const main = event.target.closest('.gallery__link');
-    lightBoxImage.src = main.getAttribute('href');
+    // lightBoxImage.src = main.getAttribute('href');
+    lightBoxImage.src = event.target.dataset.source;
 } 
 
 function openModal() {
